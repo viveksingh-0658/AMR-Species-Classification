@@ -2,7 +2,8 @@
 venv/
 
 # Notebook Folder
-Notebook/
+Notebook/dataset_statisticscode_detail.txt
+Notebook/forStudypurpose.txt
 
 # Python Cache
 __pycache__/

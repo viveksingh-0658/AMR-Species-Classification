@@ -43,6 +43,7 @@ The dataset contains microscopy images of different bacterial species and relate
 
 - Dataset Collection
 - Dataset Exploration
+- Dataset Visualization
 - Image Preprocessing
 - Data Augmentation
 - CNN Model Development
@@ -92,36 +93,85 @@ Results:
 
 ---
 
-### Stage 2: Dataset Exploration & Validation ✅
+## Stage 2: Data Exploration (Completed)
 
-Completed:
+### Tasks Performed
 
-- Installed required libraries
-- Created Python virtual environment
-- Opened TIFF images using Pillow
-- Verified image dimensions
-- Verified RGB color format
-- Examined sample images from multiple classes
-- Generated class distribution statistics
+- Dataset structure verification
+- Random image inspection
+- Image resolution check
+- RGB / Grayscale verification
+- Class distribution analysis
+- Corrupted image detection
+- Blur analysis
+- Noise analysis
+
+### Dataset Statistics
+
+- Total Classes: 33
+- Total Images: 692
+- Resolution: 2048 × 1532
+- Color Mode: RGB
+- Corrupted Images: 3
+
+### Image Quality Analysis
+
+#### Blur Analysis
+
+- Average Blur Score: 22.54
+- Minimum Blur Score: 6.52
+- Maximum Blur Score: 97.61
+
+#### Noise Analysis
+
+- Average Noise Score: 26.62
+- Minimum Noise Score: 5.80
+- Maximum Noise Score: 65.77
+
+### Conclusion
+
+The dataset is suitable for deep learning based microbial image classification.
+
+## Extra Notes in stage 2 
+### Image Resolution Check(file name image_resoluction_cheak.py)
+
+- Verified image dimensions across dataset
+- Resolution found: 2048 × 1532 pixels
+- Detected and removed 3 corrupted TIFF images
+- Dataset cleaned before preprocessing
+
+### Blur Analysis Observation (blur_analysis.py)
+
+Blur analysis was performed using the Variance of Laplacian method.
+
+A total of 669 images were successfully analyzed.
+
+- Average Blur Score: 22.54
+- Minimum Blur Score: 6.52
+- Maximum Blur Score: 97.61
+
+The results indicate that most images contain sufficient edge information and are suitable for feature extraction and CNN-based image classification. A few images show lower sharpness but no severe blur issues were observed across the dataset.
+
+## Noise Analysis(python_noise_analysis.py)
+
+Noise analysis was performed using the standard deviation of pixel intensities.
 
 Results:
 
-| Property | Value |
-|-----------|---------|
-| Classes | 33 |
-| Images | 692 |
-| Format | TIFF |
-| Resolution | 2048 × 1532 |
-| Color Mode | RGB |
+- Total Images Checked: 669
+- Average Noise Score: 26.62
+- Minimum Noise Score: 5.80
+- Maximum Noise Score: 65.77
 
-Observations:
+Observation:
 
-- Dataset is nearly balanced.
-- Class sizes range between 20–23 images.
-- Images are suitable for CNN-based classification.
-- High-resolution microscopy images are available.
+The dataset exhibits moderate pixel intensity variation. The images are suitable for machine learning and deep learning based image classification tasks.
+
 
 ---
+
+
+
 
 ## Technologies Used
 
