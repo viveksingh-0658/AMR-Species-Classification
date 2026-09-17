@@ -168,6 +168,19 @@ Observation:
 The dataset exhibits moderate pixel intensity variation. The images are suitable for machine learning and deep learning based image classification tasks.
 
 
+### Stage 3: Dataset Visualization
+Goal
+Dataset ko visually understand karna.
+## Stage 3 Progress
+
+### Dataset Visualization
+
+- Created class distribution visualization
+- Generated horizontal bar chart
+- Saved visualization in results folder
+
+
+
 ---
 
 
